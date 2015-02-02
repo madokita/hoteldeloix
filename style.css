@@ -26,7 +26,6 @@ Author: Mirai Espana
          url('museosans_100-webfont.svg#museo_sans300') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
@@ -83,17 +82,26 @@ h2, .offers-listing-wrapper .offer .offer-title, .offers-detail-wrapper .offer-h
     font-size:27px;
     color:#39464A;
 }
-
-h3, .offers-detail-wrapper .offer-features-wrapper .offer-boxes-wrapper .offer-box.main-box {
+h3 {
     font-family:AdobeGaramondProRegular;
+    font-size:17px;
+    color:#A0B1C0;
+    position:relative; /*para poder ir encima de title icon que lleva position:absolute*/
+}
+.title-box h3, .offers-detail-wrapper .offer-features-wrapper .offer-boxes-wrapper .offer-box.main-box {    font-family:AdobeGaramondProRegular;
     font-size:30px;
     color:#004063;
-    position:relative; /*para poder ir encima de title icon que lleva position:absolute*/
 }
 
 h4 {
 	color: #bbb;
 	font-size: 20px;
+}
+.offers-mashup {
+	font-family:AdobeGaramondProRegular;
+    font-size:21px;
+    color:#004063;
+    text-align:center;
 }
 
 h1, h2, h3, h4 {}
@@ -139,7 +147,7 @@ body {
 hr {
     border: 0;
     height: 1px;
-    background-image: rgba(0,0,0,.45);
+    background-image: a(0,0,0,.45);
     background-image: -webkit-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,.45),rgba(0,0,0,0));
     background-image: -moz-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,.45),rgba(0,0,0,0));
     background-image: -ms-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,.45),rgba(0,0,0,0));
@@ -213,7 +221,7 @@ a, ul.anchor li  {
 
 .btn, .mapa .formRuta input.calculaRuta, .offers-listing-wrapper .offer .offer-button, .offers-detail-wrapper .offer-calendar-wrapper .offer-button {
    border:none;
-    border-radius:3px;
+   border-radius:3px;
    box-shadow:none;
    font-family:AdobeGaramondProRegular;
    font-size:20px;
@@ -225,14 +233,14 @@ a, ul.anchor li  {
 	background:#A671BD;/*morado*/
     color:#fff;  
 }
-.btn02, #engine-submit-button, .offers-detail-wrapper .offer-calendar-wrapper .offer-button {
+.btn02, #engine-submit-button, .offers-detail-wrapper .offer-calendar-wrapper .offer-button, .more-info-link {
 	background:#9DC02E;/*pistacho*/
     color:#fff;  
 }
 #engine-submit-button{
 	padding:6px 20px;;
 }
-.btn01:hover, .btn02:hover,  .mapa .formRuta input.calculaRuta:hover, .offers-listing-wrapper .offer .offer-button:hover, .offers-detail-wrapper .offer-calendar-wrapper .offer-button:hover {
+.btn01:hover, .btn02:hover,  .mapa .formRuta input.calculaRuta:hover, .offers-listing-wrapper .offer .offer-button:hover, .offers-detail-wrapper .offer-calendar-wrapper .offer-button:hover, .more-info-link:hover {
 	background:#000 !important;
     color:#fff; 
 }
@@ -248,6 +256,19 @@ section .container {
 }
 
 /* HOME */
+.offers-mashup-inner {
+    position:relative;
+}
+.offers-mashup-inner .offers-mashup-slide {
+	bottom:28px;
+    margin-bottom:20px;
+    position:absolute;
+}
+.offers-mashup dl dd {
+	font-size: 40px;
+    margin-bottom: 20px;
+	margin-top: 20px;
+}
 
 /* LOCATION */
 .latlon-wrapper li {
@@ -279,7 +300,12 @@ section .container {
 
 
 /* OFFERS */
-
+.offers-mashup dl dd {
+	margin-bottom:20px;   
+}
+.offers-mashup img {
+	opacity:.6;
+}
 /* REVIEWS */
 div.hssurveys_full .comments p.commentsPerson span.date {
     color: #000 !important;
@@ -297,6 +323,11 @@ div.hssurveys_full {
 .reviewsOn .questions li p.answer {
     line-height: 22px !important;
     padding: 0 6px 0 10px !important;
+}
+/*NOT FOUND*/
+.not_found #main .content {
+    min-height: 350px;
+	padding: 50px;
 }
 
 /* BLOG */
@@ -327,9 +358,9 @@ div.hssurveys_full {
 /* COOKIES POLICY - LEGAL NOTICE*/
 #cookies-wrapper-content{
 	margin:50px auto;
-    width:1200px;
+    width:960px;
 } 
-.politica-de-cookies h1, .aviso-legal h1 {
+.cat-cookies-policy h1, .cat-legal h1 {
 	color:#005984;
     font-size:40px;
     position:relative;
@@ -345,6 +376,9 @@ div.hssurveys_full {
     color:#666;
     line-height:1.6;
 }
+.bookingstep1 .engine_mashup{
+	position:relative;
+}
 .bookingstep1 header #logo {
     margin-top: 0;
     text-align:left;
@@ -354,6 +388,10 @@ div.hssurveys_full {
 	height:66px;
     width:160px;
 }
+.bookingstep1 #motor_reservas #mirai_roomSelectionContainer{
+	box-shadow:none;
+}
+
 .bookingstep1 #motor_reservas #mirai_bookentrance {padding: 10px 0;}
 
 .bookingstep1 ul#menu_web li a, .bookingstep1 #motor_reservas #mirai_bookentrance #mirai_be7 input:hover {text-decoration: none !important;}
@@ -368,6 +406,14 @@ div.hssurveys_full {
 .bookingstep1 #header .content {
     margin: 0 auto;
     width: 960px;
+}
+.bookingstep1 td.col2, .bookingstep1 td.col3 {
+    font-family:museo_sans300;
+    font-size:13px;
+    line-height:12px;
+}
+.bookingstep1 td.col2 p > span:first-child {
+	color:#000;
 }
 #mirai_be0, #mirai_be2, #mirai_be0 input, #mirai_be0 select {font-size: 15px !important;}
 
@@ -584,19 +630,19 @@ div.hssurveys_full {
 /*----------------------------------- MENU ----------------------------------*/
 /*---------------------------------------------------------------------------*/
 /* MENU WEB */
-ul#menu_web {
+ul#menu_web, ul#menu_aux2 {
     margin-top:10px;
 }
-ul#menu_web > li {
+ul#menu_web > li, ul#menu_aux2 > li{
     border-top:5px solid transparent;
     display: inline-block;
     padding:10px 0 10px;
     position: relative;
 }
-ul#menu_web > li:last-child, ul#menu_web > li ul.sub-menu li a {
+ul#menu_web > li:last-child, ul#menu_web > li ul.sub-menu li a, ul#menu_aux2 > li:last-child {
 	border-right:none;
 }
-ul#menu_web li a {
+ul#menu_web li a, ul#menu_aux2 li a {
 	border-right:1px solid #B7C8DF;
     color:#666;
     padding:0px 15px;
@@ -604,13 +650,13 @@ ul#menu_web li a {
 ul#menu_web li:hover ul.sub-menu > li a, ul#menu_web li.current-menu-item ul.sub-menu > li a{
 	color:#666;
 }
-ul#menu_web li.current-menu-item, ul#menu_web li:hover  {
+ul#menu_web li.current-menu-item, ul#menu_web li:hover, ul#menu_aux2 li.current-menu-item, ul#menu_aux2 li:hover  {
     border-top:5px solid #AABED9;
 }
-ul#menu_web li.current-menu-item a, ul#menu_web li:hover a, ul#menu_web li:hover ul.sub-menu > li:hover a, ul#menu_web li.current-menu-item ul.sub-menu > li:hover a {
+ul#menu_web li.current-menu-item a, ul#menu_web li:hover a, ul#menu_web li:hover ul.sub-menu > li:hover a, ul#menu_web li.current-menu-item ul.sub-menu > li:hover a, ul#menu_aux2 li.current-menu-item a, ul#menu_aux2 li:hover a {
 	color:#005984*;
 }
-ul#menu_web li.current-menu-item a:hover  {
+ul#menu_web li.current-menu-item a:hover, ul#menu_aux2 li.current-menu-item a:hover   {
 	cursor:default;
 }
 ul#menu_web  ul.sub-menu {
@@ -620,6 +666,8 @@ ul#menu_web  ul.sub-menu {
 ul#menu_web  ul.sub-menu > li{
     border-top:none;
 }
+ul#menu_aux2 {display:none;}
+
 
 
 /* FOOTER MENU*/
@@ -693,13 +741,20 @@ ul.anchor2 li a {
     position:absolute;
 	margin-top:4px;
 }
+#logo img{
+	margin-top:2px;
+}
 
-/* TEXT BOX ON THE PHOTOS*/
-.box-text {
-	background:#fff;
+/* TEXT BOX ON THE PHOTOS + mashup ofertas */
+.box-text, .offers-mashup {
     background:rgba(255,255,255,.7);
     padding:30px;
     position:absolute;
+}
+.offers-mashup {
+	left:10%;
+    top:25%;
+    width:18%;
 }
 .left10 {
 	left:10%;
@@ -707,6 +762,9 @@ ul.anchor2 li a {
 .left30 {
 	left:30%;
 } 
+.left40 {
+	left:40%
+}
 .left55 {
 	left:55%;
 }
@@ -721,6 +779,9 @@ ul.anchor2 li a {
 }
 .w35 {
 	width:35%;
+}
+.w40 {
+	width:40%;
 }
 .w50 {
 	width:50%;
@@ -784,7 +845,7 @@ ul.anchor2 li a {
 .ico-top {
     background:url("/files/ico_title.png") 0 0 no-repeat #fff;
     content: " ";
-	display: block;
+	display: block;fbox-text
 	border: solid 2px #fff;
 	border-radius: 60px;
 	-webkit-border-radius: 60px;
@@ -809,6 +870,41 @@ ul.anchor2 li a {
 .ico-top.people {
 	background-position: -8px -173px;
 }
+
+span.ico-gallery {
+    background: url("/files/camara.png") no-repeat 8px 7px rgba(255,255,255,.6);
+	border-radius: 7px;
+    bottom: 20px;
+	color: #000;
+    cursor: pointer;
+    font-size: 25px;
+	padding: 0px 10px 0px 40px;
+	pointer-events: none;
+    position: absolute;
+	right: 20px;
+}
+.gallery .posit-r a:hover {
+	opacity: 1;
+	-webkit-animation: flash 1s;
+	animation: flash 1s;
+}
+@-webkit-keyframes flash {
+	0% {
+		opacity: .5;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .5;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 /*---------------------------------------------------------------------------*/
 /*-------------------------------- TITLE BOX -----------------------------*/
 /*---------------------------------------------------------------------------*/
@@ -895,10 +991,31 @@ ul.anchor {
 }
 
 /* ipad portrait - landscape */
-@media (min-device-width: 768px) and (max-device-width: 979px){}
+@media (min-device-width: 768px) and (max-device-width: 979px){
+	ul#menu_web {display:none;}
+
+	ul#menu_aux2 {
+    	display:block;
+		margin:30px 0 0;
+    	text-align:right;
+	}
+
+
+}
+
 
 /* customize ipad portrait */
 @media (min-device-width: 768px) and (max-device-width: 979px) and (orientation : portrait) {
+    #engine .top50{
+    	top:40%;
+    }
+    ul#menu_aux2 li a {
+    	font-size:14px;
+        padding:0 10px;
+    }
+    html[lang=nl] ul#menu_aux2 li a {
+    	padding:0 6px;
+    }   
     .bookingstep1 #mirai_roomSelectionContainer {
         width: 98%;
     }
@@ -908,17 +1025,96 @@ ul.anchor {
     .offers-detail-wrapper .section {
         padding: 0 !important;
     }
-/* SPA */    
+    #header {
+    	background-position: 0 7px;
+		background-size: 100% 94%;
+	}
+    #engine h1 {
+    	line-height:55px;
+    }
+    html[lang=fr] ul#menu_aux2 li a {
+		font-size:13px;
+    	padding:0 10px;
+	}
+    .box-text, .offers-mashup {
+    	padding:20px;
+    }
+    .btn, .mapa .formRuta input.calculaRuta, .offers-listing-wrapper .offer .offer-button, .offers-detail-wrapper .offer-calendar-wrapper .offer-button,ul.anchor li a, ul.anchor2 li a {
+    	font-size:16px;
+    }
+    html[lang=es] #engine-submit-button {
+    	padding:6px 10px;
+    }
+
+    /*HOME*/
+    .cat-home img.size-full {
+    	height:400px;
+    }
+    .offers-mashup {
+    	left:2%;
+        top:34%;
+        width:22%;
+    }
+    .offers-mashup img {
+    	width:60%;
+    }
+    .offers-mashup dl dt {
+    	font-size:20px;
+    }
+    .offers-mashup dl dd {
+    	font-size:35px;
+        margin-bottom:5px;
+        margin-top:5px;
+    }
+    .cat-home .box-text.w35 {
+    	width:50%;
+    }
+    .cat-home .box-text.w40 {
+    	width:58%;
+    }
+    .cat-home .box-text.left40 {
+    	left:35%;
+    }
+    .cat-home .box-text.left55 {
+    	left:40%;
+    }
+    
+	/*LOCATION*/
+	.cat-location .row-fluid .title-box .offset3 {
+		margin-left: 16.66666666666666%;
+	}
+	.cat-location .row-fluid .title-box .span8 {
+		width: 74.99999999999999%;
+	}    
+	/* SPA */    
     .gallery .foto03 img {
-	height:380px;
+		height:380px;
     }
     .gallery .foto04 img,.gallery .foto05 img {
-	height:208px;
-}
+		height:208px;
+	}
+    /*COOKIES*/
+    #cookies-wrapper-content{
+    	width:760px;
+	} 
+    /*BOOKINGSTEP*/
+    .bookingstep1 ul#menu_web {
+    	right:2px;   
+    }
+    .bookingstep1 ul#menu_web li a{
+    	padding:0 10px;
+    }
 
 }
 
 /* customize ipad landscape */
-@media (min-device-width: 768px) and (max-device-width: 979px) and (orientation : landscape) {}
+@media (min-device-width: 768px) and (max-device-width: 979px) and (orientation : landscape) {
+    #header {
+    background-size:100% 100%;
+    }
+    #logo img {
+    	margin-top:-7px;
+    }
+}
 
 /*------------------------------------------------------------------------------*/

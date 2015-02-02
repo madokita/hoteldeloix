@@ -1,0 +1,42 @@
+/********************
+*
+*   PIE currently adds full or partial support to IE 6 through 8 for the following CSS3 features:
+*     - border-radius
+*     - box-shadow
+*     - border-image
+*     - multiple background images
+*     - linear-gradient as background image
+*
+*	behavior: url(/wp-content/themes/NOMBRE-HOTEL/PIE.htc);  OJO!!! mira la url del navegador. Ahí tienes el nombre :)
+*
+*********************/
+ul.anchor li {
+	background:#fff;
+    filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    background-image:url(/files/ico_btn01.png);
+    background-repeat:no-repeat;
+}
+span.ico-gallery {
+    background: #fff;
+    filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+}
+
+.img-dark img, .wp-image-267, .wp-image-338, .wp-image-343, .wp-image-342, .wp-image-347, .wp-image-349, .wp-image-351, .wp-image-353, .wp-image-355, .wp-image-360, .wp-image-362{
+    filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+}
+span.ico-gallery {
+    background:#fff;
+    background-image: url("/files/camara.png");
+    background-repeat:no-repeat;
+    background-position:8px 7px;
+    filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+}
+.ico-top {
+	height:70px;
+    position:relative;
+    top:0px;
+}
+.box-text, .offers-mashup {
+    background:#fff;
+    filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)" !important;
+}

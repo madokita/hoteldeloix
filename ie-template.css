@@ -1,0 +1,537 @@
+/****
+IE TEMPLATE
+Estilos generales a tocar;
+body --> Background
+h1 ... --> Color
+logo a --> Height y width
+menu --> background
+a --> color
+
+**********************************************************/
+
+/****
+ESTILOS GENERALES
+**********************************************************/
+
+*, html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, label, fieldset, input, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset, img {border: 0 none;}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ol, ul, li {list-style: none outside none;}
+
+caption, th {text-align: left;}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+q:before, q:after {content: "";}
+
+strong {font-weight: bold;}
+
+em {font-style: italic;}
+
+a img {border: medium none;}
+
+a {outline: medium none;}
+
+body {
+    background: #fff;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6, .post h2 a {
+    color: #3477D2;
+    font-weight: normal;
+}
+
+h2 {font-size: 24px;margin-bottom: 8px;}
+
+h3 {font-size: 20px;margin: 8px 0;}
+
+h4 {font-size: 16px;margin: 5px 0;}
+
+.content p {
+    margin: 0 0 10px;
+    text-align:justify;
+}
+
+ul li {list-style-type: none;}
+
+a, a:visited {text-decoration: none;}
+
+a:hover {text-decoration: underline;}
+
+/****
+Estilos IE TEMPLATE
+******************************************************************/
+
+.ie-template{
+    margin: 0 auto;
+    width: 960px;
+}
+
+#header, #main, #footer {
+    float: left;
+    width: 100%;
+}
+
+#header {height: auto;}
+
+#main {
+    margin: 15px auto 30px;
+}
+
+.content {
+    float: left;
+    margin: 0 auto;
+    padding: 0 3%;
+    width: 94%;
+}
+
+/****
+ Header 
+ ***************************************/
+
+.widget_qtranslate {
+    float: right;
+    margin-top:10px;
+    position: relative;
+}
+.widget_qtranslate select {width: 90px;}
+
+.qtrans_language_chooser {}
+.qtrans_language_chooser li {
+    float: left;
+    margin-right: 10px;
+}
+
+/*-------------------------------*/
+
+#logo a {
+    background: url("images/logo.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 90px;
+    position: relative;
+    text-indent: -10000px;
+    width: 240px;
+}
+
+/**** Menu ****/
+
+.menu {
+    background: #fff;
+    float: right;
+    height: 38px;
+    margin: 80px auto 0;
+    padding: 0;
+    width: auto;
+}
+.menu li {
+    float: left;
+    position: relative;
+    z-index: 20;
+}
+.menu a {
+    color: #747373;
+    display: block;
+    line-height: 38px;
+    padding: 0 13px;
+    text-decoration: none;
+}
+.menu ul {
+    display: none;
+    float: left;
+    left: 0;
+    position: absolute;
+    top: 38px;
+    width: 180px;
+    z-index: 100;
+}
+.menu ul li {
+    min-width: 180px;
+}
+.menu ul ul {
+    left: 100%;
+    top: 0;
+}
+.menu ul a {
+    background-color: #333333;
+    height: auto;
+    line-height: 1em;
+    padding: 10px;
+    width: 160px;
+}
+.menu li a:hover, .menu ul ul a:hover, .menu li.current_page_item a:hover {
+    background-color: #333333;
+    color: #FFFFFF;
+}
+.menu li:hover a, .menu ul ul:hover a, .menu li.current_page_item:hover a {
+    background-color: #333333;
+    color: #FFFFFF;
+}
+.menu li:hover > ul {
+    display: block;
+}
+.menu li.current_page_item a, .menu li.current-menu-ancestor a, .menu li.current-menu-item a, .menu li.current-menu-parent a {
+    color: #000000;
+}
+.menu li.current-menu-parent a {
+    background-color: #333333;
+    color: #FFFFFF;
+}
+
+/*-------------------------------*/
+
+.foto-bg {
+    background: url("/files/ietemplate.jpg") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 300px;
+    width: 960px;
+}
+
+/**** OLD MOTOR ****/
+.mirai_motor, .engine_mashup {
+    background: none repeat scroll 0 0 #FFFFFF;
+    float: left;
+    height: 200px;
+    margin-left: 10px;
+    margin-top: 30px;
+    padding: 20px;
+    position: relative;
+    top: 0;
+    width: 200px;
+}
+
+#mirai_be0 {width:auto;}
+#mirai_be2:hover {cursor:pointer;}
+#mirai_be2, #mirai_be4, #mirai_be6 {
+    border: 1px solid #CCCCCC;
+}
+#mirai_be2, #mirai_be4, #mirai_be9 {padding:0px;height:auto;}
+#mirai_be9 {width:auto;}
+#mirai_be1, #mirai_be2, #mirai_be3, #mirai_be4, #mirai_be7 {vertical-align: middle;}
+.ie6 #mirai_book {top: 70px;}
+#mirai_be4 {width: 50px;}
+#mirai_be7, #mirai_be8 {width:100%;text-align:center;} 
+
+/**** NEW MOTOR ****/
+.box-engine .engine_mashup {display:none;}
+.engine_mashup {width:300px;}
+.engine_mashup div {}
+.engine_mashup div .text-before {margin-bottom:10px;}
+.engine_mashup div .text-after {margin-top:10px;}
+.engine_mashup div form {padding: 4%;}
+.engine_mashup div form legend {border:0px;font-family:inherit;font-size:inherit;line-height:inherit;color:inherit;margin-bottom:9px;}
+.engine_mashup div form .control-group {float:left;width:100%;}
+.engine_mashup div form .control-group label {float:left;display:inline-block;width:35%;}
+.engine_mashup div form .control-group label.label-code {font-size:11px;line-height:1.1em;}
+.engine_mashup div form .control-group label.label-code a {}
+.engine_mashup div form .control-group input {float:left;width:57%;}
+.engine_mashup div form .control-group input.date {}
+.engine_mashup div form .control-group input.code {}
+.engine_mashup div form .control-group select {float:left;display:inline-block;width:22%;}
+.engine_mashup div form .control-group select.selector {width:99%;}
+.engine_mashup div form .control-group span.help-inline {float:left;display:inline-block;line-height: 2em;}
+.engine_mashup div form .control-group span.legend {margin-left:35%;}
+.engine_mashup div form .control-group span.legend a {font-size: 11px;}
+.engine_mashup div form .button-group {display:block;text-align:center;}
+.engine_mashup div form .button-group input[type=submit] {margin-bottom: 9px;}
+.engine_mashup div form .button-group input[type=submit]:hover {}
+.engine_mashup div form .button-group a {line-height:2em;}
+.engine_mashup div form .button-group a:hover {}
+
+/**** Ofertas ****/
+.mirai_ofertas {
+    background: none repeat scroll 0 0 #FFFFFF;
+    float: right;
+    height: 200px;
+    margin-right: 10px;
+    margin-top: 30px;
+    overflow: hidden;
+    padding: 20px;
+    position: relative;
+    width: 200px;
+}
+.php_widget {
+    background: none repeat scroll 0 0 #FFFFFF;
+    float: right;
+    height: 200px;
+    margin-right: 10px;
+    margin-top: 30px;
+    overflow: hidden;
+    padding: 20px;
+    position: relative;
+    width: 200px;
+}
+.php_widget .widgettitle{ display: none; }
+
+/**** Ofertas JSON ****/
+
+h4.margen {}
+
+.offers-slider-container {
+    width: 200px;
+    height: 200px;
+    background: #fff;
+    float: right;
+    text-align: center;
+    padding: 20px;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+
+.offers-slide .prev, .offers-slide .next, .offers-slide .linkRss, .offers-slide .offers-description {display: none;}
+
+.offers-slide .offersImg {border: 1px solid #000;}
+.offers-slide .offers-data {padding: 5px 0;}
+
+
+/****
+Footer
+**************************************************/
+
+/**** Vcard ****/
+
+.hotelschema, .vcard, .address {
+    float: left;
+    font-size: 13px;
+    text-align: left;
+    width: 100%;
+}
+
+/**** Social Media ****/
+
+#social-media {
+    float: right;
+    margin: 0 auto;
+    position: relative;
+}
+#social-media li {
+    float: left;
+    margin-left: 8px;
+}
+#social-media li a {
+    display: block;
+    text-indent: -9999px;
+}
+.rss_link_16, .facebook_link_16, .twitter_link_16, .youtube_link_16, .flickr_link_16, .foursquare_link_16 {
+    height: 16px;
+    width: 16px;
+}
+.rss_link_24, .facebook_link_24, .twitter_link_24, .youtube_link_24, .flickr_link_24, .foursquare_link_24 {
+    height: 24px;
+    width: 24px;
+}
+.rss_link_32, .facebook_link_32, .twitter_link_32, .youtube_link_32, .flickr_link_32, .foursquare_link_32 {
+    height: 32px;
+    width: 32px;
+}
+.rss_link_32:hover {
+    background: url("images/sprite.png") no-repeat scroll 0 0 transparent;
+}
+.rss_link_32 {
+    background: url("images/sprite.png") no-repeat scroll 0 -32px transparent;
+}
+.facebook_link_32:hover {
+    background: url("images/sprite.png") no-repeat scroll -32px 0 transparent;
+}
+.facebook_link_32 {
+    background: url("images/sprite.png") no-repeat scroll -32px -32px transparent;
+}
+.twitter_link_32:hover {
+    background: url("images/sprite.png") no-repeat scroll -64px 0 transparent;
+}
+.twitter_link_32 {
+    background: url("images/sprite.png") no-repeat scroll -64px -32px transparent;
+}
+.youtube_link_32:hover {
+    background: url("images/sprite.png") no-repeat scroll -96px 0 transparent;
+}
+.youtube_link_32 {
+    background: url("images/sprite.png") no-repeat scroll -96px -32px transparent;
+}
+.flickr_link_32:hover {
+    background: url("images/sprite.png") no-repeat scroll -128px 0 transparent;
+}
+.flickr_link_32 {
+    background: url("images/sprite.png") no-repeat scroll -128px -32px transparent;
+}
+.foursquare_link_32:hover {
+    background: url("images/sprite.png") no-repeat scroll -160px 0 transparent;
+}
+.foursquare_link_32 {
+    background: url("images/sprite.png") no-repeat scroll -160px -32px transparent;
+}
+.rss_link_24:hover {
+    background: url("images/sprite.png") no-repeat scroll 0 -64px transparent;
+}
+.rss_link_24 {
+    background: url("images/sprite.png") no-repeat scroll 0 -88px transparent;
+}
+.facebook_link_24:hover {
+    background: url("images/sprite.png") no-repeat scroll -24px -64px transparent;
+}
+.facebook_link_24 {
+    background: url("images/sprite.png") no-repeat scroll -24px -88px transparent;
+}
+.twitter_link_24:hover {
+    background: url("images/sprite.png") no-repeat scroll -48px -64px transparent;
+}
+.twitter_link_24 {
+    background: url("images/sprite.png") no-repeat scroll -48px -88px transparent;
+}
+.youtube_link_24:hover {
+    background: url("images/sprite.png") no-repeat scroll -72px -64px transparent;
+}
+.youtube_link_24 {
+    background: url("images/sprite.png") no-repeat scroll -72px -88px transparent;
+}
+.flickr_link_24:hover {
+    background: url("images/sprite.png") no-repeat scroll -96px -64px transparent;
+}
+.flickr_link_24 {
+    background: url("images/sprite.png") no-repeat scroll -96px -88px transparent;
+}
+.foursquare_link_24:hover {
+    background: url("images/sprite.png") no-repeat scroll -120px -64px transparent;
+}
+.foursquare_link_24 {
+    background: url("images/sprite.png") no-repeat scroll -120px -88px transparent;
+}
+.rss_link_16:hover {
+    background: url("images/sprite.png") no-repeat scroll 0 -112px transparent;
+}
+.rss_link_16 {
+    background: url("images/sprite.png") no-repeat scroll 0 -128px transparent;
+}
+.facebook_link_16:hover {
+    background: url("images/sprite.png") no-repeat scroll -16px -112px transparent;
+}
+.facebook_link_16 {
+    background: url("images/sprite.png") no-repeat scroll -16px -128px transparent;
+}
+.twitter_link_16:hover {
+    background: url("images/sprite.png") no-repeat scroll -32px -112px transparent;
+}
+.twitter_link_16 {
+    background: url("images/sprite.png") no-repeat scroll -32px -128px transparent;
+}
+.youtube_link_16:hover {
+    background: url("images/sprite.png") no-repeat scroll -48px -112px transparent;
+}
+.youtube_link_16 {
+    background: url("images/sprite.png") no-repeat scroll -48px -128px transparent;
+}
+.flickr_link_16:hover {
+    background: url("images/sprite.png") no-repeat scroll -64px -112px transparent;
+}
+.flickr_link_16 {
+    background: url("images/sprite.png") no-repeat scroll -64px -128px transparent;
+}
+.foursquare_link_16:hover {
+    background: url("images/sprite.png") no-repeat scroll -80px -112px transparent;
+}
+.foursquare_link_16 {
+    background: url("images/sprite.png") no-repeat scroll -80px -128px transparent;
+}
+
+
+/****
+Situacion
+********************************/
+
+.mapa {width:100%;float:left;}
+.map_canvas {border:1px solid #000; margin-bottom:15px;width:900px;}
+.formRuta {width:100%;float:left;margin:5px 0 15px;text-align:center;}
+.origen {width: 250px;}
+.calculaRuta {}
+.calculaRuta :hover{}
+
+/****
+Habitaciones + Glider
+********************************/
+
+.content-glider {
+    float: left;
+    height: auto;
+    width: 100%;
+}
+
+#glider_habitaciones {
+    float: left;
+    margin: 15px 0;
+    position: relative;
+    width: 100%;
+}
+
+.glidecontenttoggler {
+    float: left;
+    margin: 10px 0;
+    position: relative;
+    top: auto;
+    width: 100%;
+}
+
+.glidecontenttoggler a {
+    margin-right:10px;
+    text-transform: uppercase;
+}
+
+.glidecontenttoggler a :hover {}
+
+.glidecontent {
+    border: 1px solid #999999;
+    float: left;
+    margin-bottom: 15px;
+    padding: 1%;
+    width: 98%;
+}
+
+.glidecontent img {
+    border: 1px solid #999999;
+    float:right;
+    margin:0 0 5px 10px;
+}
+
+/****
+Acc (Turismo)
+*********************************/
+
+.acc_trigger {border-bottom: 1px solid;border-top: 1px solid;padding:6px 0;}
+.acc_trigger a {}
+.acc_trigger a :hover {text-decoration:none;}
+
+
+/****************** IE TEMPLATE **********************/
+/*.cat-photos .ngg-gallery-thumbnail {display: block !important; width:100px; height:75px; float:none; margin:0 20px 20px 0;}*/
+
+.ie6 .widget-container, .ie7 .widget-container{display:none}
+.offers-slide .prev, .offers-slide .next, .offers-slide .linkRss, .offers-slide .offers-description, .offers-mashup img, .php_widget .widgettitle, #main .on-page-slideshow, .nav-tabs, .no-ie {display: none;}
+.active{background:transparent!important}
+#main .span7, #main .span5, #main .span6, #main .span4 {width:100%!important}
+.offset1, .offset2 {margin-left:0!important}
+
+.ie7 #mirai_be0 input, .ie7 #mirai_be0 span, .ie7 #mirai_be1, .ie7 #mirai_be2, .ie7 #mirai_be3, .ie7 #mirai_be4, .ie7 #mirai_be5, .ie7 #mirai_be6, .ie7 #mirai_be7, .ie7 #mirai_be8 {vertical-align: middle !important;}
+
+.ie6 #mirai_be0 input, .ie6 #mirai_be0 span, .ie6 #mirai_be1, .ie6 #mirai_be2, .ie6 #mirai_be3, .ie6 #mirai_be4, .ie6 #mirai_be5, .ie6 #mirai_be6, .ie6 #mirai_be7, .ie6 #mirai_be8 {vertical-align: middle !important;}
+
+.ie6 .ui-widget-content {font-size: 14px !important;}
+
