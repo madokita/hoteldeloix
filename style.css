@@ -26,6 +26,7 @@ Author: Mirai Espana
          url('museosans_100-webfont.svg#museo_sans300') format('svg');
     font-weight: normal;
     font-style: normal;
+
 }
 
 @font-face {
@@ -84,7 +85,7 @@ h2, .offers-listing-wrapper .offer .offer-title, .offers-detail-wrapper .offer-h
 }
 h3 {
     font-family:AdobeGaramondProRegular;
-    font-size:17px;
+    font-size:23px;
     color:#A0B1C0;
     position:relative; /*para poder ir encima de title icon que lleva position:absolute*/
 }
@@ -94,8 +95,8 @@ h3 {
 }
 
 h4 {
-	color: #bbb;
-	font-size: 20px;
+	color: #ababab;
+	font-size: 18px;
 }
 .offers-mashup {
 	font-family:AdobeGaramondProRegular;
@@ -240,6 +241,9 @@ a, ul.anchor li  {
 #engine-submit-button{
 	padding:6px 20px;;
 }
+#engine-submit-button:hover {
+	background:#157FD5;
+}
 .btn01:hover, .btn02:hover,  .mapa .formRuta input.calculaRuta:hover, .offers-listing-wrapper .offer .offer-button:hover, .offers-detail-wrapper .offer-calendar-wrapper .offer-button:hover, .more-info-link:hover {
 	background:#000 !important;
     color:#fff; 
@@ -256,6 +260,24 @@ section .container {
 }
 
 /* HOME */
+.cat-home section .container{
+	padding:50px 0 0 ;
+}
+.cat-home section.posit-r {
+	min-height:550px;
+}
+.cat-home img.size-full {
+    bottom:0;
+    left:0;
+    position:absolute;
+    right:0;
+    top:105px;
+    z-index:-1;
+}    
+.offers-mashup{
+    background:#fff;
+	padding:30px;
+}
 .offers-mashup-inner {
     position:relative;
 }
@@ -306,6 +328,9 @@ section .container {
 .offers-mashup img {
 	opacity:.6;
 }
+.offers-listing-wrapper, .offers-detail-wrapper {
+	margin:0 auto;
+}
 /* REVIEWS */
 div.hssurveys_full .comments p.commentsPerson span.date {
     color: #000 !important;
@@ -328,6 +353,7 @@ div.hssurveys_full {
 .not_found #main .content {
     min-height: 350px;
 	padding: 50px;
+    width:80%;
 }
 
 /* BLOG */
@@ -433,7 +459,21 @@ div.hssurveys_full {
 }
 .bookingstep1 ul#menu_web li a{text-decoration:none;}
 .bookingstep1 .booking_mobile, .bookingstep1 .sub-menu {display: none!important;}
-
+#mirai_roomSelection a.moreinfo, #mirai_roomSelection tr.roomrate td.col2 p a, #mirai_rootTable #summaryElements .remove, #mirai_rootTable #summaryElements .edit {
+	font-size:14px !important;  
+}
+#mirai_book{
+	font-size:16px !important
+}
+#mirai_extra h2, #mirai_extra h3 {
+	font-family: museo_sans300;
+}
+#currencyDropdownContents li a{
+	font-size:13px;
+}
+#currencyDropdownContents hr {
+	margin-top:18px;
+}
 
 /* image with opacity 70 */
 .wp-image-267, .wp-image-338, .wp-image-343, .wp-image-342, .wp-image-347, .wp-image-349, .wp-image-351, .wp-image-353, .wp-image-355, .wp-image-360, .wp-image-362  {
@@ -523,7 +563,10 @@ div.hssurveys_full {
 	margin-top:5px;
 }
 .help-block, .help-inline {
-    color:#ccc;
+    color:#bbb;
+}
+.help-block, .help-inline.ocultaRuta {
+    color:#000;
 }
 
 /* submit buttons (engine mashup, form, blog...) */
@@ -563,6 +606,12 @@ div.hssurveys_full {
 /*--  motor calendar --*/
 #ui-datepicker-div {
     font-size: 14px !important;
+}
+/* colores para fechas seleccionadas en el calendario del motor y en el de detalle de ofertas */
+.ui-datepicker-calendar ._selected-date span, .ui-datepicker-calendar ._selected-date a, .ui-datepicker-calendar ._checkin-date span, .ui-datepicker-calendar ._checkin-date a, .ui-datepicker-calendar ._checkout-date span, .ui-datepicker-calendar ._checkout-date a, .offers-detail-wrapper .offer-calendar-wrapper .offer-date .ui-datepicker-inline .calendar-legend-offer-day._checkin-date a, .offers-detail-wrapper .offer-calendar-wrapper .offer-date .ui-datepicker-inline .calendar-legend-offer-day._selected-date a, .offers-detail-wrapper .offer-calendar-wrapper .offer-date .ui-datepicker-inline .calendar-legend-offer-day._checkout-date a {
+    background:#2e6e9e;
+    color:#fff;
+    font-weight: normal;
 }
 
 /* REVIEWS MASHUP */
@@ -691,14 +740,14 @@ ul.circle, ul.circle li {
 /*---------------------------------------------------------------------------*/
 ul.anchor { /*formato botón*/
 	bottom:14%;
-	left:16%;
     position:absolute; 
+    text-align:center;
 }
 ul.anchor li {
 	background:#fff;
     background:url(/files/ico_btn01.png)0 0 no-repeat rgba(255,255,255,.8);
     border-radius:45px;
-    float:left;
+    display:inline;
     font-size:20px;
     margin:15px;
     padding:15px 15px 15px 70px;
@@ -746,16 +795,13 @@ ul.anchor2 li a {
 }
 
 /* TEXT BOX ON THE PHOTOS + mashup ofertas */
-.box-text, .offers-mashup {
+.box-text{
     background:rgba(255,255,255,.7);
+    margin-top:30px;
     padding:30px;
-    position:absolute;
+
 }
-.offers-mashup {
-	left:10%;
-    top:25%;
-    width:18%;
-}
+
 .left10 {
 	left:10%;
 } 
@@ -851,8 +897,9 @@ ul.anchor2 li a {
 	-webkit-border-radius: 60px;
 	color: #fff;
 	font-size: 100px;
-	left: 45%;
+	left: 50%;
 	line-height: 118px;
+    margin-left: -45px;
 	position: absolute;
 	top: -40px;
 	width: 95px;
@@ -928,7 +975,7 @@ span.ico-gallery {
     background: url("../mirai/images/back_top.png") no-repeat scroll center -70px #9DC02E;
     border-radius: 30px 0 0 30px;
     -webkit-border-radius: 30px 0 0 30px;
-    bottom: 80px;
+    bottom: 225px;
     color: #fff;
     display: none;
     font-size: 100px;
@@ -971,8 +1018,22 @@ span.ico-gallery {
 
 /* Large desktop */
 @media (min-width: 1200px) {
-ul.anchor {
-	left:30%;
+.engine_mashup.inline.one-row > div form .control-group label {
+	font-size: 18px;
+	margin-top: 3px;
+}
+#engine-submit-button{
+	font-size: 18px;
+}
+
+.size01 {
+    font-size:15px;
+}
+.cat-home img.size-full{
+	height:562px;
+}
+.cat-home section.posit-r{
+	min-height:670px;
 }
 .offers-listing-wrapper .offer .offer-title{
 	font-size:20px;
@@ -987,6 +1048,9 @@ ul.anchor {
 .gallery .foto04 img,.gallery .foto05 img {
 	height:302px;
 }
+#back-top {
+    bottom: 80px;
+}
 
 }
 
@@ -999,7 +1063,9 @@ ul.anchor {
 		margin:30px 0 0;
     	text-align:right;
 	}
-
+	.offers-detail-wrapper .offer-calendar-wrapper .offer-button{
+		font-size:25px !important;
+	}
 
 }
 
@@ -1047,16 +1113,18 @@ ul.anchor {
     }
 
     /*HOME*/
-    .cat-home img.size-full {
+    .contSlideshow img{
     	height:400px;
     }
-    .offers-mashup {
-    	left:2%;
-        top:34%;
-        width:22%;
+    
+    ul.anchor{
+    	bottom:18%;
     }
-    .offers-mashup img {
-    	width:60%;
+    .cat-home img.size-full { 
+		height:430px;
+	}
+    .cat-home img.size-full{
+    	top:120px;
     }
     .offers-mashup dl dt {
     	font-size:20px;
@@ -1066,17 +1134,11 @@ ul.anchor {
         margin-bottom:5px;
         margin-top:5px;
     }
-    .cat-home .box-text.w35 {
-    	width:50%;
+    .offers-mashup-inner .offers-mashup-slide{
+    	bottom:45px;
     }
-    .cat-home .box-text.w40 {
-    	width:58%;
-    }
-    .cat-home .box-text.left40 {
-    	left:35%;
-    }
-    .cat-home .box-text.left55 {
-    	left:40%;
+    .cat-home .box-text{
+    	margin-top:0;
     }
     
 	/*LOCATION*/
